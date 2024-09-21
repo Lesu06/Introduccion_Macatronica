@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Arduino | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Titulo de la practica de laboratorio</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/favicon.ico" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Santiago Muñoz Jesus <br> Andrik Perez Luna</div>
+                                <div class="text-muted">Ingenieria Mecatronica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre/09/2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/555.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">El 555 se puede configurar en diferentes modos, siendo los más comunes el modo astable y monostable. En el modo astable, el 555 genera una señal de onda cuadrada, lo que permite controlar la frecuencia de encendido y apagado de un LED. Al incorporar un potenciómetro en el circuito, se puede ajustar la velocidad de parpadeo del LED, ofreciendo un control dinámico sobre el tiempo de encendido y apagado.</p>
+                        <p class="fs-6 mb-4">A continucacin se presenta que es un circuito 555:</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Que es un 555? -</h2>
+                        <p class="fs-6 mb-4">El circuito integrado 555 es un componente fundamental en la electrónica, ampliamente utilizado por su versatilidad y facilidad de implementación. Este chip se emplea en diversas aplicaciones, como temporizadores, osciladores y generadores de pulsos, lo que lo convierte en una herramienta esencial para proyectos electrónicos.</p>
+                        <p class="fs-6 mb-4"></p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4"><ul> <li>Resistencias: Para establecer los tiempos de carga y descarga del capacitor.</li>
+                        <br> <li>Jumpers Macho-Macho</li> <br> <li> Resistencias: Para establecer los tiempos de carga y descarga del capacitor.</li> <br> <li> Jumpers: Para realizar las conexiones en el protoboard.</li> <br> <li>Protoboard: Para montar el circuito de manera temporal y realizar pruebas.</li> <br> <li>Potenciómetros: Para ajustar la frecuencia de parpadeo.</li> <br> <li>Pila de 9V: Como fuente de alimentación.</li> <br> <li>LED: El componente que parpadeará.</li></ul></p>
+                        <p class="fs-6 mb-4">Estos fueron los materiales que se utilizaron para realizar esta primera practica</p>
+                        
+
+                        
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">La simulación de este circuito se puede realizar utilizando software de diseño electrónico como Tinkercad o Multisim. En la simulación, se puede observar cómo al variar el potenciómetro, la frecuencia de parpadeo del LED cambia, lo que permite visualizar el efecto del ajuste en tiempo real.</p>
+                            
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
+                    
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Al implementar el circuito, se puede comprobar que el LED parpadea a diferentes velocidades dependiendo de la resistencia total en el circuito, que se ajusta mediante el potenciómetro. Esto demuestra la efectividad del 555 en la generación de señales de temporización y su capacidad para interactuar con otros componentes.</p>
+
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/IMG_9227.mov type="video/mov">
+                        </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">El circuito integrado 555 es una herramienta poderosa y versátil en la electrónica. Su capacidad para generar señales de temporización y su facilidad de uso lo hacen ideal para proyectos educativos y prácticos. La combinación del 555 con un potenciómetro permite un control preciso sobre la velocidad de parpadeo de un LED, lo que no solo es útil en aplicaciones prácticas, sino que también proporciona una excelente oportunidad para aprender sobre circuitos electrónicos y su funcionamiento.</p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Ohms, & Ohms. (2024, 30 julio). ¿Qué es el circuito integrado 555? - 330ohms. 330ohms. https://www.330ohms.com/blogs/blog/que-es-el-circuito-integrado-555?srsltid=AfmBOopw_Q_8_nm_vneFRNJzu5Zz5ooWp91fCCn_retHGVf108SusFzN</p>
+                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
+                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
