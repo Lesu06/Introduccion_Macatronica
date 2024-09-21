@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 5 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Controlar servomotores mediante arduino</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/favicon.ico" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Andrik Pérez Luna <br> Jesus Santiago Muñoz</div>
+                                <div class="text-muted">Ingenieria Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 19/09/24 </div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="100000px" src="img/servomotores.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">Se ha desarrollado un circuito para manejar servomotores a través de potenciómetros usando un Arduino Uno, donde se ha configurado el Arduino para que los servomotores reaccionaran al movimiento de los potenciómetros. </p>
+                        <p class="fs-6 mb-4">Después de eso se realizó el circuito físicamente uniendo los elementos necesarios como: Arduino, los servomotores, los potenciómetros y un protoboard. Una vez que todo estuviera bien conectado, se cargó el código en el Arduino logrando que los potenciómetros controlaran los servomotores de forma eficiente. 
+                            </p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">En esta practica se realizaran diversos circuitos previamente armados en tinkercad, en donde mediante unos potenciómetros, se pueda controlar los servomotores, todo esto con ayuda de un Arduino Uno, para subir el código y poder realizar esta acción.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4"> - Protoboard
+                        <p class="fs-6 mb-4">-  Jumpers</p>
+                        <p class="fs-6 mb-4">-  Servomotores</p>
+                        <p class="fs-6 mb-4">-  Potenciómetros</p>
+                        <p class="fs-6 mb-4">-  Arduino Uno</p>
+                        <p class="fs-6 mb-4">-Cable usb (Arduino)</p>
+                                        
+                                    
+            
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Se comenzó armando y simulando el circuito en Tinkercad, después de verificar la funcionalidad del circuito, se procedió al armado del circuito, en el cual se necesitaron los materiales previamente mencionados. Siguiendo el diseño previamente construido en Tinkercad, se empezó a realizar el armado del circuito en físico.</p>
+                        <p class="fs-6 mb-4">Una vez acabado el circuito, se cargó el código en el Arduino, que estaba diseñado para leer las entradas de los potenciómetros y controlar la posición de los servomotores. Luego, se conectó el Arduino a la computadora para que este pudiera hacer su función</p>
+                        
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Para poder realizar las simulaciones de los circuitos, se necesitó la ayuda de la aplicación Tinkercad, ya que ahí podemos realizar los circuitos de forma digital, y así ponerlos a prueba realizando una simulación y verificar que no haya ningún error tanto en los códigos como en el armado de los circuitos.</p>
+                            <p class="fs-6 mb-4">Ejemplo:</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/servo.png" alt="..." /></figure>
+                    
+                            <p id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+                            <p class="fs-6 mb-4">El diseño de los circuitos armados, como ya se menciono previamente, se realizo el diseño en la aplicación de Tinkercad</p>
+                    
+                            
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">La construcción de los circuitos nos basamos de la aplicación de Tinkercad y replicarlo en físico, esto con la finalidad de no tener ningún error al construir o conectar el circuito.</p>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Circuito 1: Mediante el código subido al Arduino, el circuito debe hacer un giro a 180 grados</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/servo1.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Circuito 2: Mediante el código de Arduino, ir cambiando los valores del giro para así controlar el servomotor y hacer que gire en la dirección deseada.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/variasposiciones.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Circuito 3: Controlar un servomotor con un potenciómetro.</p>
+                        <figure class="mb-4" align="center"><video width="30%"  controls>
+                            <source src="video/servopotenciometro.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Circuito 4: Controlar 2 servomotores con un potenciómetro.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/2servounpote.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Circuito 5: Controlas 2 servomotores con 2 potenciómetros, cada potenciómetro controla un servomotor.</p>
+                        <figure class="mb-4" align="center"><video width="30%"  controls>
+                            <source src="video/2servo2pote.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Circuito 6: Controlar un servomotor con un potenciómetro (Conectado a una fuente externa)</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/fuenteexterna.mp4" type="video/mp4">
+                        </video></p></figure>
+                    
+                      
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión, todas las prácticas realizadas cumplieron con los resultados esperados. Esto se logró gracias a las pruebas previas en Tinkercad, donde pudimos probar los circuitos virtualmente antes de armarlos físicamente. Esta etapa nos ayudó a identificar y corregir errores, lo que facilitó mucho el proceso de ensamblaje.</p>
+                        
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4"><a href=https://www.ingenierizando.com/electronica/potenciometro> https://www.ingenierizando.com/electronica/potenciometro/</a> </p>
+                        <p class="fs-6 mb-4"><a href=https://www.ingmecafenix.com/electronica/motores-electronicos/servomotor> https://www.ingmecafenix.com/electronica/motores-electronicos/servomotor/</a></p>
+               
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
