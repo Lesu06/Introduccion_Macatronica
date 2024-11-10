@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Arduino | Ibero Puebla</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>                    
+                        <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sección Título de Portafolio-->
+        <header class="bg-primary py-2 mt-6">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                            <h1 class="display-8 fw-bolder text-white mb-2">Introducción a Ing. Mecatrónica</h1>
+                            <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sección Título de la Práctica-->
+        <section class="py-3" id="scroll-target">
+            <div class="container px-5 my-2">
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">Título de la práctica de laboratorio</h1>
+
+                    <!-- Etiqueta de Alumno -->
+                    <img class="img-fluid rounded-circle" width="50px" src="assets/favicon.ico" alt="..." />
+                    <div class="ms-2">
+                        <div class="fw-bold">Santiago Muñoz Jesús <br> Andrik Pérez Luna</div>
+                        <div class="text-muted">Ingeniería Mecatrónica</div>
+                    </div>
+
+                    <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre/10/2024</div>
+                    <!-- Etiquetas o Tópicos Importantes de la Práctica-->
+                    <a class="badge bg-primary text-decoration-none link-light" >Impresión 3D</a>
+                    <a class="badge bg-primary text-decoration-none link-light" >Fabricación</a>
+                </header>
+            </div>
+        </section>
+
+        <!-- Sección de Contenido de la Práctica-->
+        <section>
+            <div class="container px-5">
+                <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/impresion3D.png" alt="..." /></figure>
+
+                <!-- Contenido sobre Impresión 3D -->
+                <h1 class="fw-bolder mb-4">Impresión 3D</h1>
+
+                <!-- Resumen -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">Resumen</h2>
+                <p class="fs-6 mb-4">La impresión 3D es una tecnología de fabricación aditiva que permite crear objetos tridimensionales mediante la superposición de capas de material. En la industria mecatrónica, la impresión 3D se utiliza ampliamente para prototipado rápido, fabricación de componentes personalizados y creación de piezas complejas con precisión.</p>
+                
+                <!-- Funcionamiento de la Impresión 3D -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">1. Funcionamiento de la Impresión 3D</h2>
+                <p class="fs-6 mb-4">La impresión 3D funciona mediante un proceso de fabricación aditiva, en el que el material se añade capa por capa hasta formar el objeto deseado. El diseño se realiza en software de modelado 3D, y luego se envía a la impresora para su producción. Las impresoras 3D pueden utilizar materiales como plásticos, resinas, metales y, en algunos casos, incluso biomateriales.</p>
+                
+                <!-- Tipos de Impresión 3D -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">2. Tipos de Impresión 3D</h2>
+                <p class="fs-6 mb-4">Existen varios métodos de impresión 3D, cada uno con características específicas según el material y la aplicación:</p>
+                <ul>
+                    <li><strong>FDM (Fused Deposition Modeling):</strong> Técnica en la que el material se funde y deposita en capas. Es uno de los métodos más comunes y económicos, ideal para plásticos.</li>
+                    <li><strong>SLA (Stereolithography):</strong> Utiliza resinas fotosensibles que se solidifican mediante luz láser, ofreciendo gran precisión y calidad en los detalles.</li>
+                    <li><strong>SLS (Selective Laser Sintering):</strong> Emplea un láser para sinterizar polvo de materiales como plástico o metal, ideal para piezas de alta resistencia.</li>
+                </ul>
+                
+                <!-- Ventajas de la Impresión 3D en la Mecatrónica -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">3. Ventajas de la Impresión 3D en la Mecatrónica</h2>
+                <p class="fs-6 mb-4">La impresión 3D presenta numerosas ventajas en la industria mecatrónica:</p>
+                <ul>
+                    <li><strong>Prototipado rápido:</strong> Permite la creación de prototipos en cuestión de horas, facilitando el desarrollo de productos.</li>
+                    <li><strong>Personalización:</strong> Es ideal para crear piezas personalizadas o de diseño específico según los requisitos de cada proyecto.</li>
+                    <li><strong>Reducción de costos:</strong> Minimiza la necesidad de herramientas y moldes, reduciendo costos de fabricación.</li>
+                    <li><strong>Libertad de diseño:</strong> Permite crear geometrías complejas y piezas que no serían posibles con métodos tradicionales.</li>
+                </ul>
+                
+                <!-- Aplicaciones de la Impresión 3D en la Mecatrónica -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">4. Aplicaciones de la Impresión 3D en la Mecatrónica</h2>
+                <p class="fs-6 mb-4">La impresión 3D se aplica en numerosos campos dentro de la mecatrónica, como:</p>
+                <ul>
+                    <li><strong>Desarrollo de prototipos funcionales:</strong> Facilita el ensayo y la validación de diseños antes de la fabricación en serie.</li>
+                    <li><strong>Fabricación de piezas de repuesto:</strong> Ideal para producir repuestos y componentes personalizados o de difícil adquisición.</li>
+                    <li><strong>Creación de carcasas y soportes:</strong> Permite el diseño de carcasas personalizadas y soportes a medida para circuitos y sistemas mecatrónicos.</li>
+                </ul>
+                
+                <!-- Importancia de la Impresión 3D en la Industria Moderna -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">5. Importancia de la Impresión 3D en la Industria Moderna</h2>
+                <p class="fs-6 mb-4">La impresión 3D ha revolucionado el sector manufacturero al permitir una producción ágil y a bajo costo. En la mecatrónica, esta tecnología es clave para el desarrollo de prototipos, la fabricación personalizada y la exploración de nuevas posibilidades en diseño y fabricación.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
