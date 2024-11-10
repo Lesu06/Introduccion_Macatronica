@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 5 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Controlar Brazo Robotico Mediante Joysticks</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/favicon.ico" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Andrik Pérez Luna <br> Jesus Santiago Muñoz</div>
+                                <div class="text-muted">Ingenieria Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 25/10/24 </div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="300px" src="img/IMG_1537.jpg" alt="..."/></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">Este proyecto presenta el desarrollo y control de un brazo robótico de cuatro grados de libertad mediante el uso de un microcontrolador Arduino y potenciómetros tipo joystick. La implementación se basa en la biblioteca Servo.h para gestionar el movimiento preciso de cada servomotor, permitiendo manipular de forma eficiente las distintas articulaciones del brazo. El código controla cuatro servomotores para emular movimientos de agarre, elevación, rotación y desplazamiento, replicando acciones básicas de un brazo humano. Los resultados obtenidos muestran un control intuitivo y preciso, ideal para aplicaciones educativas y demostrativas, con posibilidades de expansión a sistemas más avanzados de robótica y automatización.
+                        </p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Un brazo robótico es un dispositivo mecánico compuesto por varios eslabones y articulaciones, diseñado para imitar los movimientos de un brazo humano. Estos brazos suelen contar con distintos grados de libertad, que les permiten moverse en diferentes direcciones para realizar tareas como manipulación de objetos, ensamblaje, y más. La precisión y flexibilidad de los brazos robóticos los convierten en herramientas importantes en industrias como la automotriz, la médica y la manufacturera.
+
+                            En este proyecto, se utiliza un Arduino para controlar un brazo robótico de cuatro grados de libertad (4 servomotores). Cada servomotor es controlado mediante potenciómetros tipo joystick que proporcionan las señales analógicas para ajustar los ángulos de los motores, logrando así manipular cada parte del brazo robótico.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4"> - Impresora 3D
+                        <p class="fs-6 mb-4">-  Protoboard</p>
+                        <p class="fs-6 mb-4">-  4 servomotores MG90S</p>
+                        <p class="fs-6 mb-4">-  Un Potenciómetro para la garra</p>
+                        <p class="fs-6 mb-4">-  Joysticks</p>
+                        <p class="fs-6 mb-4">-Cable usb (Arduino)</p>
+                        <p class="fs-6 mb-4">-Cables y jumpers macho macho y macho hembra</p>
+                        <p class="fs-6 mb-4">-Arduino</p>
+                        <p class="fs-6 mb-4">-Shield Arduino V5</p>
+                        <p class="fs-6 mb-4">-Tuercas y tornillos M3</p>
+                                        
+                                    
+            
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">El código proporcionado utiliza la biblioteca Servo.h para gestionar los movimientos de cuatro servomotores conectados a un Arduino. Cada servomotor controla una sección del brazo robótico y recibe sus instrucciones a partir de la lectura de los valores de los joysticks.
+
+                            Definición de Componentes: <br>
+                            
+                            Se definen cuatro objetos de tipo Servo (motor1, motor2, motor3 y motor4) que representan cada uno de los motores del brazo robótico.
+                            Los pines analógicos A1, A2, A3 y A4 se configuran para leer las entradas de los potenciómetros, que representan los ejes X e Y de dos joysticks (controladores físicos).
+                            Inicialización en setup(): <br>
+                            
+                            Cada motor se asocia a un pin PWM del Arduino mediante el método attach(), que habilita el control de estos en los pines digitales 3, 6, 9 y 10.
+                            Se activa la comunicación serial para monitorear valores de depuración.
+                            Control de Movimientos en el loop(): <br>
+                            
+                            El loop principal realiza lecturas analógicas de cada joystick para obtener valores entre 0 y 1023, que luego se restringen a ciertos rangos de seguridad mediante la función constrain.
+                            Cada joystick tiene un eje X y un eje Y; el valor del joystick define el movimiento de los servos correspondientes:
+                            Si el valor de un eje del joystick está en una posición central (aproximadamente entre 505 y 520), el servo mantiene su posición actual.
+                            Si el valor del eje es menor a 505, el ángulo del servo disminuye en función de la distancia del valor leído al centro, permitiendo movimientos graduales.
+                            Si el valor es mayor a 520, el ángulo del servo aumenta, permitiendo que el brazo robótico se mueva en la dirección opuesta.
+                            El incremento o decremento en el ángulo depende de la variable salto, que se ajusta en función de la desviación del joystick respecto al centro. Esto proporciona mayor precisión en movimientos sutiles y rapidez en desplazamientos amplios.
+                            Control de Velocidad y Precisión: <br>
+                            
+                            El uso de delay(20) al final de cada ciclo loop() permite controlar la velocidad de ejecución del bucle, reduciendo la velocidad de respuesta de los servos y permitiendo que el brazo se mueva suavemente.</p>
+                      
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Codigo Fuente</h1>
+                            <p class="fs-6 mb-4">Descargar el codigo fuente: <a href="GarritaDefinitiva2/GarritaDefinitiva2.ino">Codigo Fuente</a> </p>
+                            <p class="fs-6 mb-4">Ejemplo:</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/garra_agarra.mp4" type="video/mp4">
+                            </video></p></figure>
+                    
+                            <p id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+                            <p class="fs-6 mb-4">El diseño fue realizado en la aplicacion de SolidWorks y se realizo una investigacion a profundidad de como funcionan los joysticks para poder controlar el brazo mediantes</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" width="300px" src="img/IMG_1522.jpg" alt="..."/></figure>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/impresion.mp4" type="video/mp4">
+                            </video></p></figure>
+                    
+                            
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">El código presentado utiliza los servomotores controlados por potenciómetros de manera efectiva, permitiendo movimientos precisos y controlados en un brazo robótico de cuatro grados de libertad. Sin embargo, se podrían implementar algunas mejoras en la precisión del control, como el uso de filtros de software para estabilizar las lecturas de los potenciómetros y evitar fluctuaciones no deseadas.
+
+                            Este sistema es adecuado para aplicaciones de aprendizaje o demostración, pero se puede mejorar para aplicaciones industriales o profesionales, integrando controladores de motores con retroalimentación o sensores adicionales. En conjunto, este proyecto ilustra los principios básicos de la robótica y el control de actuadores, siendo una excelente introducción a la programación y control de brazos robóticos.</p>
+                        
+                        
+    
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
