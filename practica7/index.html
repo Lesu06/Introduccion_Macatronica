@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Práctica 7 | Ibero Puebla</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section: TITLE -->
+        <header class="bg-primary py-2 mt-6">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                            <h1 class="display-8 fw-bolder text-white mb-2">Control de Brazo Robótico Bluetooth</h1>
+                            <p class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section: PRACTICE TITLE -->
+        <section class="py-3" id="scroll-target">
+            <div class="container px-5 my-2">
+                <header class="mb-4">
+                    <h1 class="fw-bolder mb-1">Brazo Robótico Controlado por Bluetooth</h1>
+                    <img class="img-fluid rounded-circle" width="50px" src="assets/favicon.ico" alt="..." />
+                    <div class="ms-2">
+                        <div class="fw-bold">Andrik Pérez Luna <br> Jesús Santiago Muñoz</div>
+                        <div class="text-muted">Ingeniería Mecatrónica</div>
+                    </div>
+                    <div class="text-muted fst-italic mt-2 mb-2">Fecha: 08/11/2024</div>
+                    <a class="badge bg-primary text-decoration-none link-light">Arduino</a>
+                    <a class="badge bg-primary text-decoration-none link-light">Bluetooth</a>
+                </header>
+            </div>
+        </section>
+
+        <!-- Section: CONTENT -->
+        <section>
+            <div class="container px-5">
+                <!-- Resumen -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+                <p class="fs-6 mb-4">
+                    Este proyecto implementa un brazo robótico de cuatro grados de libertad (4DOF) controlado de forma remota mediante Bluetooth. El uso de un módulo Bluetooth 5 proporciona mayor alcance, baja latencia y menor consumo energético. 
+                    El brazo robótico se opera desde una aplicación móvil personalizada, enviando comandos para ejecutar movimientos específicos en cada servomotor. 
+                </p>
+
+                <!-- Introducción -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
+                <p class="fs-6 mb-4">
+                    Los brazos robóticos son herramientas versátiles y esenciales en la automatización moderna. La posibilidad de controlarlos de forma inalámbrica abre nuevas aplicaciones, desde educación hasta uso industrial. Este proyecto utiliza Arduino como controlador principal y un módulo Bluetooth para recibir instrucciones en tiempo real desde un dispositivo móvil.
+                    <br><br>
+                    **Características clave del Bluetooth 5 en este proyecto:**
+                    <ul>
+                        <li>Alcance extendido (hasta 40 metros en interiores).</li>
+                        <li>Velocidad mejorada para transmisión rápida de comandos.</li>
+                        <li>Compatibilidad con dispositivos modernos.</li>
+                    </ul>
+                </p>
+
+                <!-- Materiales -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
+                <ul class="fs-6 mb-4">
+                    <li>Arduino UNO (o equivalente).</li>
+                    <li>Módulo Bluetooth HC-05 o HM-10 (Bluetooth 5 recomendado).</li>
+                    <li>4 Servomotores SG90 o MG90S (para movimientos precisos).</li>
+                    <li>Protoboard y cables de conexión.</li>
+                    <li>Fuente de alimentación externa para servomotores (batería LiPo 7.4V).</li>
+                    <li>Impresora 3D para fabricar las piezas del brazo.</li>
+                    <li>Dispositivo móvil con aplicación de control Bluetooth (como **"Bluetooth Terminal"** o una app personalizada).</li>
+                </ul>
+
+                <!-- Desarrollo -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                <p class="fs-6 mb-4">
+                    El brazo robótico se construye utilizando piezas impresas en 3D y servomotores para cada grado de libertad. Arduino controla cada servomotor basándose en los comandos recibidos a través de Bluetooth.
+                </p>
+                <h3>Pasos:</h3>
+                <ol class="fs-6 mb-4">
+                    <li><strong>Diseño 3D:</strong> Crear las piezas del brazo en un software CAD como SolidWorks y fabricarlas con una impresora 3D.</li>
+                    <li><strong>Cableado:</strong> Conectar los servomotores a los pines PWM del Arduino y alimentar con una fuente externa.</li>
+                    <li><strong>Configuración Bluetooth:</strong> Configurar el módulo HC-05 para emparejarse con el dispositivo móvil y establecer una tasa de baudios de 9600 bps.</li>
+                    <li><strong>Programación Arduino:</strong> Utilizar la biblioteca Servo.h para controlar los movimientos de los servomotores según los comandos Bluetooth recibidos.</li>
+                </ol>
+
+                <!-- Código -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Código Fuente -</h2>
+                <p class="fs-6 mb-4">
+                    El siguiente código interpreta comandos Bluetooth para controlar los servomotores:
+                </p>
+                <pre>
+#include <Servo.h>
+
+Servo motor1, motor2, motor3, motor4; // Instancias para cada servomotor.
+char command;
+
+void setup() {
+    Serial.begin(9600); // Comunicación Bluetooth.
+    motor1.attach(3);
+    motor2.attach(5);
+    motor3.attach(6);
+    motor4.attach(9);
+}
+
+void loop() {
+    if (Serial.available()) {
+        command = Serial.read(); // Leer comando Bluetooth.
+        switch (command) {
+            case 'A': motor1.write(90); break; // Rotar servo 1.
+            case 'B': motor2.write(90); break; // Rotar servo 2.
+            case 'C': motor3.write(90); break; // Rotar servo 3.
+            case 'D': motor4.write(90); break; // Rotar servo 4.
+            default: break;
+        }
+    }
+}
+<figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/image.png" alt="..." /></figure>
+<figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/image_2.png" alt="..." /></figure>
+                </pre>
+
+                <!-- Conclusiones -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                <p class="fs-6 mb-4">
+                    Este proyecto demuestra cómo integrar tecnologías modernas como Bluetooth 5 con sistemas de robótica básicos para crear un brazo robótico controlado de forma remota. Se logra una comunicación eficiente con un diseño compacto y modular. 
+                    Las mejoras futuras incluyen agregar retroalimentación por sensores y un control más intuitivo mediante interfaces gráficas.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark py-4 mt-auto">
+       
