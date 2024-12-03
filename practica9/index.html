@@ -112,8 +112,25 @@ void loop() {
     }
   }
 }
-                </pre>
+<br>
 
+                </pre>
+                <p class="fs-6 mb-4">
+                    Este código permite controlar un LED a través de una conexión Bluetooth utilizando una aplicación creada en MIT App Inventor. La comunicación se establece mediante un módulo Bluetooth conectado a un microcontrolador (por ejemplo, un Arduino).
+
+                    1. Configuración inicial:
+                    Se establece la comunicación Bluetooth en los pines 8 y 9 usando la librería SoftwareSerial, y se configura el pin 11 como salida para controlar el LED.
+<br>
+                    2. Recepción de datos:
+                    El microcontrolador escucha los datos enviados desde la app MIT App Inventor. Cuando la app envía un carácter:
+                    
+                    Si recibe '1', el LED se enciende.
+                    
+                    Si recibe '0', el LED se apaga.
+                    <br>
+               3. Monitorización:
+                    Los datos recibidos y las acciones tomadas (encender/apagar LED) se muestran en el monitor serial para facilitar la depuración.                                                                         
+                </p>
                 <!-- Aplicación MIT App Inventor -->
                 <h2 class="fw-bolder mb-4 mt-5 fs-5">- Aplicación MIT App Inventor -</h2>
                 <p class="fs-6 mb-4">
