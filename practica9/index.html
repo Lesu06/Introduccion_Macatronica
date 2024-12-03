@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Práctica | Control LED Bluetooth</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section: TITLE -->
+        <header class="bg-primary py-2 mt-6">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 fw-bolder text-white mb-2">Control de LED por Bluetooth</h1>
+                            <p class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section: PRACTICE TITLE -->
+        <section class="py-3" id="scroll-target">
+            <div class="container px-5 my-2">
+                <header class="mb-4">
+                    <h1 class="fw-bolder mb-1">Control de LED por Bluetooth</h1>
+                    <img class="img-fluid rounded-circle" width="50px" src="assets/favicon.ico" alt="..." />
+                    <div class="ms-2">
+                        <div class="fw-bold">Andrik Pérez Luna <br> Jesús Santiago Muñoz<br> Zaul Sanchez Ventura</div>
+                        <div class="text-muted">Ingeniería Mecatrónica</div>
+                    </div>
+                    <div class="text-muted fst-italic mt-2 mb-2">Fecha: 08/11/2024</div>
+                    <a class="badge bg-primary text-decoration-none link-light">Arduino</a>
+                    <a class="badge bg-primary text-decoration-none link-light">Bluetooth</a>
+                </header>
+            </div>
+        </section>
+
+        <!-- Section: CONTENT -->
+        <section>
+            <div class="container px-5">
+                <!-- Resumen -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+                <p class="fs-6 mb-4">
+                    Este proyecto consiste en el control de un LED mediante un módulo Bluetooth conectado a un Arduino. 
+                    Se utiliza una aplicación creada en MIT App Inventor para enviar comandos *on* y *off*, que activan o desactivan el LED. 
+                </p>
+                <figure class="mb-4" align="center"><video width="80%"  controls>
+                    <source src="video/bluetooth.mp4" type="video/mp4">
+                </video></p></figure>
+                <!-- Código Arduino -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Código Arduino -</h2>
+                <pre class="fs-6 mb-4 bg-light p-3">
+#include &lt;SoftwareSerial.h&gt;
+
+// Pines para el módulo Bluetooth
+const int rxPin = 8;  // RX del módulo Bluetooth
+const int txPin = 9;  // TX del módulo Bluetooth
+
+// Crear una instancia de SoftwareSerial
+SoftwareSerial bluetooth(rxPin, txPin);
+
+// Pin del LED
+const int ledPin = 11;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  bluetooth.begin(9600); // Configurar la velocidad del Bluetooth
+  Serial.begin(9600);    // Para depuración en el monitor serie
+
+  Serial.println("Bluetooth LED");
+}
+
+void loop() {
+  if (bluetooth.available()) {
+    char receivedChar = bluetooth.read(); // Leer el carácter recibido
+    Serial.print("Dato recibido: ");
+    Serial.println(receivedChar);
+
+    // Control del LED
+    if (receivedChar == '1') {
+      digitalWrite(ledPin, HIGH); // Encender LED
+      Serial.println("LED encendido.");
+    } else if (receivedChar == '0') {
+      digitalWrite(ledPin, LOW); // Apagar LED
+      Serial.println("LED apagado.");
+    }
+  }
+}
+                </pre>
+
+                <!-- Aplicación MIT App Inventor -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Aplicación MIT App Inventor -</h2>
+                <p class="fs-6 mb-4">
+                    En MIT App Inventor, se diseñó una interfaz sencilla con botones *on* y *off*, que envían los caracteres '1' y '0' al Arduino a través de Bluetooth. 
+                    Los bloques de programación permiten gestionar la conexión y enviar los datos correspondientes.
+                </p>
+                <figure class="mb-4"><img class="img-fluid rounded" width="500px" src="img/Imagen de WhatsApp 2024-12-02 a las 22.08.50_a2a88fb6.jpg" alt="..." /></figure>
+                <figure class="mb-4"><img class="img-fluid rounded" width="500px" src="img/Imagen de WhatsApp 2024-12-02 a las 22.08.57_e31dc41f.jpg" alt="..." /></figure>
+                   
+
+                <!-- Conclusiones -->
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                <p class="fs-6 mb-4">
+                    Este proyecto muestra cómo integrar Arduino con Bluetooth y MIT App Inventor para aplicaciones interactivas. 
+                    Es una excelente introducción al control remoto de dispositivos mediante tecnologías accesibles.
+                </p>
+                <p id="referencias">
+                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                    <p class="fs-6 mb-4"><a href=https://codiziapp.com/projects/controla-leds-con-bluetooth-hc-06-y-arduino> https://codiziapp.com/projects/controla-leds-con-bluetooth-hc-06-y-arduino</a> </p>
+                    <p class="fs-6 mb-4"><a href=https://www.openhacks.com/uploadsproductos/proyecto-no-5-encender-y-apagar-un-led-por-bluetooth.pdf>https://www.openhacks.com/uploadsproductos/proyecto-no-5-encender-y-apagar-un-led-por-bluetooth.pdf</a></p>
+           
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5 text-center text-white">
+            <small>© 2024 Ibero Puebla - Ingeniería Mecatrónica</small>
+        </div>
+    </footer>
+</body>
+</html>
